@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/juanjosenavarro13/library-juanjosenavarroes/compare/v1.0.0...v1.0.1) (2024-08-03)
+
+
+### Bug Fixes
+
+* delete private ([#3](https://github.com/juanjosenavarro13/library-juanjosenavarroes/issues/3)) ([375dec4](https://github.com/juanjosenavarro13/library-juanjosenavarroes/commit/375dec4b7f605893e31a45cc214104addd04ad5b))
+
 ## 1.0.0 (2024-08-03)
 
 
