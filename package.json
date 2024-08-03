@@ -1,7 +1,7 @@
 {
   "name": "library-juanjosenavarroes",
   "author": "Juan José Navarro Perea",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
   "files": [
     "dist"
@@ -29,6 +29,9 @@
     "version:minor": "npm version minor && git push && git push --tags",
     "version:major": "npm version major && git push && git push --tags",
     "prepare": "husky"
+  },
+  "peerDependencies": {
+    "tailwindcss": "3.4.4"
   },
   "dependencies": {
     "react": "18.3.1",
