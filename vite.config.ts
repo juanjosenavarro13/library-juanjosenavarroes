@@ -18,6 +18,7 @@ export default defineConfig({
       entry: "src/index.ts",
       formats: ["es"],
     },
+    sourcemap: true,
     cssCodeSplit: true,
     cssMinify: true,
     minify: true,
