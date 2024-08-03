@@ -46,11 +46,11 @@ export default defineConfig({
       },
       enabled: true,
       include: ["src/**"],
-      exclude: ["src/**/index.ts"],
+      exclude: ["src/**/index.ts", "**/*.stories.tsx"],
     },
     reporters: ["dot", "github-actions"],
     include: ["src/**/*.{test,spec}.{ts,tsx}"],
-    exclude: [],
+    exclude: ["src/**/index.ts", "**/*.stories.tsx"],
     setupFiles: "./setup-test.ts",
   },
 });

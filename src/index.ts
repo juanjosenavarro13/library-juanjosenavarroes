@@ -1,3 +1,3 @@
-import { Prueba } from "./components";
+import * as components from "./components";
 
-export { Prueba };
+export { components };
