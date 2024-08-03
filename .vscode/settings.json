@@ -1,0 +1,10 @@
+{
+  "css.lint.unknownAtRules": "ignore",
+  "i18n-ally.localesPaths": ["./public/locales/"],
+  "i18n-ally.sourceLanguage": "es",
+  "i18n-ally.namespace": true,
+  "i18n-ally.defaultNamespace": "translation",
+  "i18n-ally.pathMatcher": "{locale}/{namespace}.json",
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sortKeys": true
+}

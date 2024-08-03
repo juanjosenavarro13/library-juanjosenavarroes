@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Github actions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Run Lint, Format, and Test](https://github.com/juanjosenavarro13/frontend-juanjosenavarroes/actions/workflows/CI.yml/badge.svg)](https://github.com/juanjosenavarro13/frontend-juanjosenavarroes/actions/workflows/CI.yml)
+[![E2E Tests](https://github.com/juanjosenavarro13/frontend-juanjosenavarroes/actions/workflows/E2E.yml/badge.svg?branch=main)](https://github.com/juanjosenavarro13/frontend-juanjosenavarroes/actions/workflows/E2E.yml)
+[![CodeQL](https://github.com/juanjosenavarro13/frontend-juanjosenavarroes/actions/workflows/codeQL.yml/badge.svg)](https://github.com/juanjosenavarro13/frontend-juanjosenavarroes/actions/workflows/codeQL.yml)
 
-Currently, two official plugins are available:
+# Git flow
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```mermaid
+gitGraph
+    commit
+    commit
+    branch feat
+    checkout feat
+    commit
+    commit
+    checkout main
+    merge feat
+    commit
+    commit
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```mermaid
+flowchart LR
+    main[Main]
+    e2etest[E2E Test]
+    unittest[Unit Test]
+    codeQl[Code QL]
+    featureBranch[Feature Branch]
+    pr[Pull Request]
+
+    main --> featureBranch
+    featureBranch --> pr
+    pr --> unittest
+    unittest -->|deploy| main
+    main --> e2etest
+    main --> codeQl
+```

@@ -1,26 +1,30 @@
-import react from "@vitejs/plugin-react-swc";
-import dts from "vite-plugin-dts";
 import { defineConfig } from "vitest/config";
+import react from "@vitejs/plugin-react-swc";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), dts({ include: ["lib"] })],
+  plugins: [react()],
   build: {
     lib: {
-      entry: "./lib/main.ts",
       name: "library-juanjosenavarroes",
-      fileName: (format) => `library-juanjosenavarroes.${format}.js`,
+      entry: "src/lib/main.ts",
     },
+    cssCodeSplit: true,
+    cssMinify: true,
+    minify: true,
     rollupOptions: {
       external: ["react", "react-dom", "react/jsx-runtime"],
       output: {
         globals: {
-          react: "react",
-          "react-dom": "react-dom",
-          "react/jsx-runtime": "react/jsx-runtime",
+          react: "React",
+          "react-dom": "ReactDOM",
+          "react/jsx-runtime": "jsxRuntime",
         },
       },
     },
+  },
+  server: {
+    port: 3000,
   },
   test: {
     globals: true,
@@ -31,10 +35,17 @@ export default defineConfig({
         "100": false,
       },
       enabled: true,
-      include: ["lib/**"],
-      exclude: ["lib/main.ts", "**/**.d.ts", "**/index.ts", "lib/**/*.test.t{s,sx}"],
+      include: ["src/**"],
+      exclude: [
+        "src/main.tsx",
+        "src/App.tsx",
+        "src/lib/main.ts",
+        "src/**/index.ts",
+      ],
     },
     reporters: ["dot", "github-actions"],
-    include: ["lib/**/*.{test,spec}.{ts,tsx}"],
+    include: ["src/**/*.{test,spec}.{ts,tsx}"],
+    exclude: [],
+    setupFiles: "./setup-test.ts",
   },
 });
