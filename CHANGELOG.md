@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/juanjosenavarro13/library-juanjosenavarroes/compare/v1.0.2...v1.0.3) (2024-08-03)
+
+
+### Bug Fixes
+
+* config library ([#6](https://github.com/juanjosenavarro13/library-juanjosenavarroes/issues/6)) ([a79cb8c](https://github.com/juanjosenavarro13/library-juanjosenavarroes/commit/a79cb8ce7fb545dc0c87ae55a826e9eeef1e3388))
+
 ## [1.0.2](https://github.com/juanjosenavarro13/library-juanjosenavarroes/compare/v1.0.1...v1.0.2) (2024-08-03)
 
 
