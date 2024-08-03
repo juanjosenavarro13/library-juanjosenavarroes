@@ -1,3 +1,3 @@
-import { Prueba } from "./components/prueba";
+import { Prueba } from "./components";
 
 export { Prueba };
