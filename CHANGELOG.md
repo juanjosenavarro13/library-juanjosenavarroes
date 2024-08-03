@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/juanjosenavarro13/library-juanjosenavarroes/compare/v1.0.1...v1.0.2) (2024-08-03)
+
+
+### Bug Fixes
+
+* build and publish ([5b04d9c](https://github.com/juanjosenavarro13/library-juanjosenavarroes/commit/5b04d9c6319e0205a3858040db9d8d5c9c4e36ce))
+
 ## [1.0.1](https://github.com/juanjosenavarro13/library-juanjosenavarroes/compare/v1.0.0...v1.0.1) (2024-08-03)
 
 
