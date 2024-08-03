@@ -1,7 +1,6 @@
 {
   "name": "library-juanjosenavarroes",
   "author": "Juan José Navarro Perea",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
   "files": [
