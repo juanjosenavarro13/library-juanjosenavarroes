@@ -3,17 +3,27 @@
   "author": "Juan José Navarro Perea",
   "version": "1.0.2",
   "type": "module",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/library-juanjosenavarroes.umd.cjs",
+  "main": "./dist/library-juanjosenavarroes.js",
+  "types": "./dist/index.d.ts",
   "module": "./dist/library-juanjosenavarroes.js",
   "exports": {
     ".": {
+      "require": "./dist/library-juanjosenavarroes.js",
       "import": "./dist/library-juanjosenavarroes.js",
-      "require": "./dist/library-juanjosenavarroes.umd.cjs"
-    }
+      "types": "./dist/index.d.ts"
+    },
+    "./resources/*": {
+      "require": "./dist/resources/*",
+      "import": "./dist/resources/*"
+    },
+    "./package.json": "./package.json"
   },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -66,6 +76,8 @@
     "tailwindcss": "3.4.4",
     "typescript": "5.5.3",
     "vite": "5.3.5",
+    "vite-plugin-dts": "4.0.0-beta.2",
+    "vite-plugin-lib-inject-css": "2.1.1",
     "vitest": "1.6.0"
   }
 }

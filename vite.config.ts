@@ -1,13 +1,22 @@
 import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react-swc";
+import dts from "vite-plugin-dts";
+import { libInjectCss } from "vite-plugin-lib-inject-css";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    libInjectCss(),
+    dts({
+      tsconfigPath: "./tsconfig-build.json",
+    }),
+  ],
   build: {
     lib: {
       name: "library-juanjosenavarroes",
-      entry: "src/lib/main.ts",
+      entry: "src/index.ts",
+      formats: ["es"],
     },
     cssCodeSplit: true,
     cssMinify: true,
@@ -36,12 +45,7 @@ export default defineConfig({
       },
       enabled: true,
       include: ["src/**"],
-      exclude: [
-        "src/main.tsx",
-        "src/App.tsx",
-        "src/lib/main.ts",
-        "src/**/index.ts",
-      ],
+      exclude: ["src/**/index.ts"],
     },
     reporters: ["dot", "github-actions"],
     include: ["src/**/*.{test,spec}.{ts,tsx}"],
