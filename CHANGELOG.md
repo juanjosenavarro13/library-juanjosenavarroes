@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/juanjosenavarro13/library-juanjosenavarroes/compare/v1.0.3...v1.1.0) (2024-08-03)
+
+
+### Features
+
+* add component text ([#8](https://github.com/juanjosenavarro13/library-juanjosenavarroes/issues/8)) ([c5248dc](https://github.com/juanjosenavarro13/library-juanjosenavarroes/commit/c5248dc92a98d6a78a0e6a419b3620832d24d489))
+
 ## [1.0.3](https://github.com/juanjosenavarro13/library-juanjosenavarroes/compare/v1.0.2...v1.0.3) (2024-08-03)
 
 
