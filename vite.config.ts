@@ -13,7 +13,7 @@ export default defineConfig({
     cssMinify: true,
     minify: true,
     rollupOptions: {
-      external: ["react", "react-dom", "react/jsx-runtime"],
+      external: ["react", "react-dom", "react/jsx-runtime", "tailwindcss"],
       output: {
         globals: {
           react: "React",
