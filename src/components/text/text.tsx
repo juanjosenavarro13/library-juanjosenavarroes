@@ -4,7 +4,7 @@ interface TextProps {
   type?: "h1" | "h2" | "h3" | "h4" | "p";
   variant?: "bold" | "italic" | "underline" | "none";
   className?: string;
-  color?: "grey" | "blue";
+  color?: "grey" | "blue" | "black";
 }
 
 export function Text({
@@ -20,15 +20,16 @@ export function Text({
     <Tag
       className={clsx(
         {
-          "text-4xl": type === "h1",
-          "text-3xl": type === "h2",
-          "text-2xl": type === "h3",
-          "text-xl": type === "h4",
-          "text-base": type === "p",
+          "text-balance text-4xl": type === "h1",
+          "text-balance text-3xl": type === "h2",
+          "text-balance text-2xl": type === "h3",
+          "text-balance text-xl": type === "h4",
+          "text-pretty text-base": type === "p",
           "font-bold": variant === "bold",
           underline: variant === "underline",
           "text-gray-600 dark:text-gray-300": color === "grey",
           "text-blue-400": color === "blue",
+          "text-gray-800 dark:text-white": color === "black",
         },
         className,
       )}

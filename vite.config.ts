@@ -15,11 +15,7 @@ export default defineConfig({
   build: {
     lib: {
       name: "library-juanjosenavarroes",
-      entry: {
-        tailwind: "src/tailwind.css",
-        badge: "src/components/badge/badge.tsx",
-        text: "src/components/text/text.tsx",
-      },
+      entry: "src/index.ts",
       formats: ["es"],
     },
     sourcemap: true,

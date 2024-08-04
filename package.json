@@ -12,7 +12,6 @@
       "import": "./dist/library-juanjosenavarroes.js",
       "types": "./dist/index.d.ts"
     },
-    "./package.json": "./package.json",
     "./dist/index.css": "./dist/index.css"
   },
   "sideEffects": [

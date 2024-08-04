@@ -45,7 +45,7 @@ const meta = {
     color: {
       control: { type: "select" },
       type: { name: "string", required: false },
-      options: ["grey", "blue"],
+      options: ["grey", "blue", "black"],
       description: "The color of the text",
       table: {
         type: { summary: "string" },
