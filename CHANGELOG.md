@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/juanjosenavarro13/library-juanjosenavarroes/compare/v1.2.0...v1.2.1) (2024-08-04)
+
+
+### Bug Fixes
+
+* edit text component ([1d312e9](https://github.com/juanjosenavarro13/library-juanjosenavarroes/commit/1d312e96f87652f6e00dc9f24dfd39887f727e5c))
+
 ## [1.2.0](https://github.com/juanjosenavarro13/library-juanjosenavarroes/compare/v1.1.0...v1.2.0) (2024-08-04)
 
 
