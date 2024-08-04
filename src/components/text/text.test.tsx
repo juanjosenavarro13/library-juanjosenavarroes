@@ -20,6 +20,12 @@ describe("Text", () => {
     expect(screen.getByText("Hello World").tagName).toBe("H3");
   });
 
+  it("should render the h4 text", () => {
+    render(<Text type="h4">Hello World</Text>);
+    expect(screen.getByText("Hello World")).toBeInTheDocument();
+    expect(screen.getByText("Hello World").tagName).toBe("H4");
+  });
+
   it("should render the p text", () => {
     render(<Text type="p">Hello World</Text>);
     expect(screen.getByText("Hello World")).toBeInTheDocument();
@@ -45,5 +51,19 @@ describe("Text", () => {
     expect(screen.getByText("Hello World")).toBeInTheDocument();
     expect(screen.getByText("Hello World").tagName).toBe("P");
     expect(screen.getByText("Hello World").classList).toContain("text-red-500");
+  });
+
+  it("should render with color grey text", () => {
+    render(<Text color="grey">Hello World</Text>);
+    expect(screen.getByText("Hello World")).toBeInTheDocument();
+    expect(screen.getByText("Hello World")).toHaveClass(
+      "text-gray-600 dark:text-gray-300",
+    );
+  });
+
+  it("should render with color blue text", () => {
+    render(<Text color="blue">Hello World</Text>);
+    expect(screen.getByText("Hello World")).toBeInTheDocument();
+    expect(screen.getByText("Hello World")).toHaveClass("text-blue-400");
   });
 });

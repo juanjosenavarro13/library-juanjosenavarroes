@@ -29,15 +29,24 @@ const meta = {
       type: { name: "string", required: false },
       description: "The type of the text",
       control: { type: "select" },
-      options: ["h1", "h2", "h3", "p"],
+      options: ["h1", "h2", "h3", "h4", "p"],
       table: {
-        type: { summary: "h1, h2, h3, p" },
+        type: { summary: "h1, h2, h3, h4, p" },
       },
     },
     className: {
       control: { type: "text" },
       type: "string",
       description: "The className of the text",
+      table: {
+        type: { summary: "string" },
+      },
+    },
+    color: {
+      control: { type: "select" },
+      type: { name: "string", required: false },
+      options: ["grey", "blue"],
+      description: "The color of the text",
       table: {
         type: { summary: "string" },
       },
