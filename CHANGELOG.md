@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/juanjosenavarro13/library-juanjosenavarroes/compare/v1.1.0...v1.2.0) (2024-08-04)
+
+
+### Features
+
+* add badge component ([10a1412](https://github.com/juanjosenavarro13/library-juanjosenavarroes/commit/10a14128c057217eb4b71277bed993e7198ff485))
+
 ## [1.1.0](https://github.com/juanjosenavarro13/library-juanjosenavarroes/compare/v1.0.3...v1.1.0) (2024-08-03)
 
 
