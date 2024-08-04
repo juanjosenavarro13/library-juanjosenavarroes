@@ -1,3 +1,3 @@
-import * as components from "./components";
+import { Text, Badge } from "./components";
 
-export { components };
+export { Text, Badge };

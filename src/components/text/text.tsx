@@ -18,9 +18,9 @@ export function Text({
     <Tag
       className={clsx(
         {
-          "text-2xl": type === "h1",
-          "text-xl": type === "h2",
-          "text-lg": type === "h3",
+          "text-4xl": type === "h1",
+          "text-3xl": type === "h2",
+          "text-2xl": type === "h3",
           "text-base": type === "p",
           "font-bold": variant === "bold",
           underline: variant === "underline",
