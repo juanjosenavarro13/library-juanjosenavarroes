@@ -35,7 +35,7 @@
     "prepare": "husky"
   },
   "peerDependencies": {
-    "tailwindcss": "3.4.4",
+    "tailwindcss": "3.4.7",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
@@ -81,7 +81,7 @@
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "0.6.5",
     "storybook": "^8.2.7",
-    "tailwindcss": "3.4.4",
+    "tailwindcss": "3.4.7",
     "typescript": "5.5.3",
     "vite": "5.3.5",
     "vite-plugin-dts": "4.0.0-beta.2",
