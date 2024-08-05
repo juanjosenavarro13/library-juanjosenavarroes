@@ -2,23 +2,29 @@ import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react-swc";
 import dts from "vite-plugin-dts";
 import { libInjectCss } from "vite-plugin-lib-inject-css";
+import tailwindcss from "tailwindcss";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
     libInjectCss(),
-    dts({
-      tsconfigPath: "./tsconfig-build.json",
-    }),
+    dts({ exclude: ["**/*.stories.tsx", "**/*.test.tsx"] }),
   ],
+  css: {
+    postcss: {
+      plugins: [tailwindcss],
+    },
+  },
   build: {
     lib: {
-      name: "library-juanjosenavarroes",
       entry: "src/index.ts",
-      formats: ["es"],
+      formats: ["es", "umd"],
+      name: "library-juanjosenavarroes",
+      fileName: (format) => `index.${format}.js`,
     },
     sourcemap: true,
+    emptyOutDir: true,
     cssCodeSplit: true,
     cssMinify: true,
     minify: true,
@@ -29,6 +35,7 @@ export default defineConfig({
           react: "React",
           "react-dom": "ReactDOM",
           "react/jsx-runtime": "jsxRuntime",
+          tailwindcss: "tailwindcss",
         },
       },
     },
