@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/juanjosenavarro13/library-juanjosenavarroes/compare/v1.2.2...v1.3.0) (2024-08-05)
+
+
+### Features
+
+* add config library ([cf9d518](https://github.com/juanjosenavarro13/library-juanjosenavarroes/commit/cf9d518ba46a3dd9e63d217c1c13f7c941d6a007))
+
 ## [1.2.2](https://github.com/juanjosenavarro13/library-juanjosenavarroes/compare/v1.2.1...v1.2.2) (2024-08-04)
 
 
